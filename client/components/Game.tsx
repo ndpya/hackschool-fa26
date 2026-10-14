@@ -109,8 +109,7 @@ export default function Game() {
     };
     window.addEventListener("keydown", handlePhysicalKey);
     return () => { window.removeEventListener("keydown", handlePhysicalKey); };
-    // BUG: replace with `[gameOver, handleKey]` to allow for physical keyboard typing
-  }, [gameOver]);
+  }, [gameOver, handleKey]);
 
 
   // Check if the word is valid
